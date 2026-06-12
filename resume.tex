@@ -1,0 +1,368 @@
+\documentclass[10pt,a4paper]{article}
+
+\usepackage[left=0.3in,right=0.3in,top=0.5in,bottom=0.5in,includehead, headheight=12pt, headsep=5pt]{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{setspace}
+\usepackage{multirow}
+% \usepackage{noto}
+\usepackage{fancyhdr}
+\usepackage{xcolor} % <-- REQUIRED FOR \textcolor
+
+\usepackage{multicol} % <--- ADD THIS LINE HERE TO FIX THE ERROR
+
+% % --- LATO FONT CONFIGURATION ---
+% \usepackage[default]{lato} % Loads Lato as the default sans-serif font
+% \usepackage[T1]{fontenc}    % Ensures clean font encoding and hyphenation
+% % -------------------------------
+
+% --- MULTI-FONT CONFIGURATION ---
+\usepackage[T1]{fontenc}
+
+% 1. Load Montserrat (For Main Headings)
+\usepackage{montserrat}
+
+% 2. Load Lato (For Project Titles/Subheadings)
+% We remove [default] so it doesn't hijack the entire document
+\usepackage[default]{lato} 
+
+% 3. Load Nunito (Set as the Default Body Font)
+% Nunito's package name is 'nunito'. The [default] option makes it the main text font.
+% \usepackage[default]{nunito} 
+% --------------------------------
+
+\setstretch{0.95}
+% \pagenumbering{gobble}
+\pagestyle{fancy}
+
+\fancyhf{} % Clear all default headers and footers
+
+% Place page number in the top-right header
+\rhead{\thepage}
+\rhead{\raisebox{10pt}{\thepage\hspace{-5pt}}}
+\rhead{\textcolor{black}{\thepage}}
+
+% Define Footer Content
+\lfoot{\color{black!50} Abhijit Karmakar}         % Left side: Name
+\cfoot{\color{black!50} +91-9563828213}           % Center: Phone Number
+\rfoot{\color{black!50} akarmakar846@gmail.com}   % Right side: Email Address
+\setlength{\footskip}{25pt}                       % Adjust the distance of the footer
+
+% Remove horizontal lines
+\renewcommand{\headrulewidth}{0pt} % Removes top header line
+\renewcommand{\footrulewidth}{0pt} % Removes bottom footer line
+% Remove the default horizontal line under the header
+\renewcommand{\headrulewidth}{0pt}
+
+% \titlespacing*{command}{left-margin}{before-spacing}{after-spacing}
+\titlespacing*{\section}{0pt}{4pt}{15pt}
+
+\titleformat{\section}
+%   {\fontfamily{Montserrat-LF}\selectfont\large\bfseries}
+  {\large\bfseries}
+  {}
+  {0em}
+  {}[\titlerule]
+
+\title{Abhijit Karmakar}
+\author{Abhijit}
+\date{today}
+
+\begin{document}
+\thispagestyle{fancy} % <--- FORCE HEADER TO SHOW ON PAGE 1
+
+%====================
+% HEADER
+%====================
+\begin{center}
+    {\LARGE \textbf{Abhijit Karmakar}} \\[4pt]
+    Full-Stack Developer | Next.js | TypeScript | Node.js | PostgreSQL | SaaS | AI Automation | n8n | AWS \\[6pt]
+    Gangarampur, West Bengal, India \\[4pt]
+    \href{mailto:akarmakar846@gmail.com}{\color{blue}akarmakar846@gmail.com} \quad | \quad
+    \href{tel:+919563828213}{\color{blue}+91 9563828213} \quad | \quad
+    \href{https://www.linkedin.com/in/abhijit-karmakar}{\color{blue}Linkedin} \quad | \quad \href{https://github.com/abhijit47}{\color{blue}Github} \quad | \quad
+    \href{https://www.abhijitdev.tech}{\color{blue}Website}
+\end{center}
+
+%====================
+% SUMMARY
+%====================
+\section*{Professional Summary}
+Full-Stack Developer with 3.5+ years of experience building scalable SaaS platforms, automation systems, and high-performance web applications using Next.js, TypeScript, Node.js, PostgreSQL, and MongoDB. Experienced in designing REST APIs, authentication systems, CI/CD pipelines, and cloud deployments. Delivered production-grade solutions across real estate, marketing automation, AI-powered applications, and agritech platforms. Passionate about leveraging technology to solve complex problems and drive business growth. Strong communicator and collaborator with a track record of working effectively in cross-functional teams.
+
+%====================
+% Core Competencies
+%=====================
+% \section*{Core Competencies}
+% \vspace{-24pt}
+% \begin{multicols}{2} % Splits the list into 2 equal columns
+% \begin{itemize}[leftmargin=*, noitemsep, topsep=0pt, partopsep=0pt, parsep=0pt]
+%     \item SaaS Development
+%     \item REST API Design
+%     \item Authentication \& Authorization
+%     \item Database Design
+%     \item AI Integrations
+%     \item Workflow Automation (n8n)
+%     \item CI/CD
+%     \item Cloud Deployment
+%     \item Performance Optimization
+% \end{itemize}
+% \end{multicols}
+
+%====================
+% SKILLS
+%====================
+\section*{Technical Skills}
+\vspace{-15pt}
+\begin{tabular}{ |p{5cm}||p{13.5cm}|  }
+
+ Category & Technologies\\
+ \hline
+ \textbf{Languages:}          & JavaScript, TypeScript, SQL\\
+ \hline
+ \textbf{Frontend:}           & React.js, Next.js, Redux, Tailwind CSS\\
+ \hline
+ \textbf{Backend:}            & Node.js, Express.js, REST APIs, tRPC\\
+ \hline
+ \textbf{Databases:}          & PostgreSQL, MongoDB, Redis\\
+ \hline
+ \textbf{DevOps:}             & Docker, GitHub Actions, CI/CD, Vercel\\
+ \hline
+ \textbf{Tools}               & n8n, Clerk, Stripe, Postman, Figma\\
+ \hline
+ \textbf{Cloud:}              & AWS (EC2, S3), GCP (Firebase)\\
+ \hline
+\end{tabular}
+
+%====================
+% EXPERIENCE
+%====================
+\section*{Professional Experience}
+\vspace{-10pt}
+\textbf{Leanitech} — Full-Stack Developer \hfill \textit{Feb 2023 – Present}  
+Bengaluru, Karnataka, India  
+\begin{itemize}[leftmargin=*, noitemsep]
+    \item Delivered 40+ client projects across SaaS, real estate, healthcare, and e-commerce domains.
+    \item Reduced average API latency from 500ms to 300ms through query optimization and indexing strategies.
+    \item Designed multi-tenant SaaS architectures, scalable database schemas, and REST APIs for production applications.
+    \item Implemented RBAC authentication supporting 5+ user roles and secure access controls.
+    \item Built CI/CD pipelines using GitHub Actions and Vercel deployments.
+    \item Integrated Stripe billing, Redis caching, and event-driven notification workflows.
+\end{itemize}
+
+\textbf{Stackkaroo} — MERN Stack Developer \hfill \textit{Dec 2022 – Mar 2023}  
+Odisha, India  
+\begin{itemize}[leftmargin=*, noitemsep]
+    \item Built responsive web applications using React.js, Next.js, and CSS with adaptive layouts across multiple screen sizes.
+    \item Developed the company website and other sites using plain CSS and Material UI.
+    \item Improved application performance and code reusability by implementing best practices and optimizing components, resulting in faster load times and enhanced user experience.
+    \item Collaborated with cross-functional teams to gather requirements, design solutions, and deliver high-quality web applications that meet business needs and user expectations.
+\end{itemize}
+
+\textbf{TrueSkills} — Frontend Web Developer \hfill \textit{Aug 2022 – Nov 2022}  
+Siliguri, West Bengal, India  
+\begin{itemize}[leftmargin=*, noitemsep]
+    \item Redesigned user interface to enhance user experience and engagement.
+    \item Implemented responsive design principles for seamless functionality across devices.
+    \item Used funnel builder tools to create visually appealing and conversion-focused landing pages.
+    \item Collaborated with marketing team to optimize funnel performance and drive higher conversion rates.
+\end{itemize}
+
+%====================
+% PROJECTS
+%====================
+\section*{Key Projects}
+\vspace{-10pt}
+\begin{itemize}[leftmargin=*, noitemsep]
+    \item \textbf{Real Estate Management Platform:}  \hfill \textit{\href{https://github.com/abhijit47}{\color{blue}Preview}}
+    \newline
+    {\small \textbf{Technologies:} T3Stack, StreamIO, Novu, PostgreSQL, Arcjet, Cloudinary, Vercel}
+    \begin{itemize}[leftmargin=*, noitemsep]
+        \item Built real-time property exchange platform with integrated chat and notifications.
+        \item Implemented StreamIO messaging and Novu notification services.
+        \item Designed PostgreSQL schema and Cloudinary-based media management.
+        \item Secured and deployed the platform using Arcjet and Vercel.
+    \end{itemize}
+
+    % {\small \textbf{Technologies:} Next.js, TypeScript, Node.js, PostgreSQL, Redis, StreamIO, Novu}
+    % \begin{itemize}[leftmargin=*, noitemsep, topsep=2pt]
+    %     \item Developed real-time property matching system.
+    %     \item Developed real-time property matching system.
+    %     \item Developed real-time property matching system.
+    %     \item Developed real-time property matching system.
+    % \end{itemize}
+    
+    \item \textbf{SaaS Bulk Email Marketing Tool:} \hfill \textit{\href{https://github.com/abhijit47}{\color{blue}Preview}}
+    \newline
+    {\small \textbf{Technologies:} Next.js, TypeScript, PostgreSQL, Drizzle ORM, Redis, Clerk}
+    \begin{itemize}[leftmargin=*, noitemsep, topsep=2pt]
+        \item Built multi-tenant email marketing platform supporting campaign creation and analytics.
+        \item Implemented authentication using Clerk and role-based access control.
+        \item Developed Redis-based email queue capable of processing thousands of emails asynchronously while preventing rate-limit issues.
+        \item Designed PostgreSQL schema with Drizzle ORM for scalable data management.
+    \end{itemize}
+
+    \item \textbf{Comic Scene Generator:} \hfill \textit{\href{https://github.com/abhijit47}{\color{blue}Preview}}
+    \newline
+    {\small \textbf{Technologies:} Electron.js, Node.js, Midjourney AI, polling mechanism, Archiver.js}
+    \begin{itemize}[leftmargin=*, noitemsep, topsep=2pt]
+        \item Built desktop application using Electron.js for cross-platform compatibility.
+        \item Integrated Midjourney AI for API-based image generation.
+        \item Implemented polling mechanism to check for image generation status and retrieve results.
+        \item Developed functionality to generate comic scenes and provide bulk zip downloads using Archiver.js.
+    \end{itemize}
+
+    % \item \textbf{Shimmer Plano Events:} \hfill \textit{\href{https://www.shimmerplanoevents.com}{\color{blue}Preview}}
+    % \newline
+    % {\small \textbf{Technologies:} Wordpress, Elementor, Other Wordpress Plugins}
+    % \begin{itemize}[leftmargin=*, noitemsep, topsep=2pt]
+    %     \item Designed and implemented a custom event management system to streamline the planning process for clients and the internal team.
+    %     \item Implemented a user-friendly interface for event planning and management.
+    %     \item Integrated contact forms and booking systems for seamless client communication.
+    %     \item Optimized website performance and ensured mobile responsiveness for a wide audience reach.
+    % \end{itemize}
+
+    % \item \textbf{FinnoAQ:} \hfill \textit{\href{https://finnoaq.com}{\color{blue}Preview}}
+    % \newline
+    % {\small \textbf{Technologies:} Next.js, TypeScript, Bootstrap, Custom Theme, Web3 Form, Calendly}
+    % \begin{itemize}[leftmargin=*, noitemsep, topsep=2pt]
+    %     \item Developed a comprehensive website for FinnoAQ, showcasing their smart biofarm technology and sustainable farming solutions.
+    %     \item Implemented a user-friendly interface to educate visitors about climate-smart farming practices and data-driven farming techniques.
+    %     \item Integrated Web3 Form for secure and decentralized contact form submissions, enhancing user privacy and data security.
+    %     \item Integrated Calendly for seamless scheduling of consultations and meetings with potential clients interested in sustainable farming solutions.
+    % \end{itemize}
+
+    % \item \textbf{Save Our Skies:} \hfill \textit{\href{https://github.com/abhijit47}{\color{blue}Preview}}
+    % \newline
+    % {\small \textbf{Technologies:} React, TypeScript, Tainwind CSS, Custom Design, Kaggle Dataset}
+    % \begin{itemize}[leftmargin=*, noitemsep, topsep=2pt]
+    %     \item Developed a visually appealing and user-friendly website for Save Our Skies, a student-led initiative supporting Raksha NGO in their mission to rescue and rehabilitate birds in need.
+    %     \item Implemented a custom design using Tailwind CSS to create an engaging and informative platform that educates visitors about the critical work of Raksha NGO and encourages support for their cause.
+    %     \item Integrated a Kaggle dataset to provide real-time information about bird rescue efforts, rehabilitation
+    %     \item Implemented features to facilitate donations and volunteer sign-ups, helping to raise awareness and support for the initiative's mission to protect vulnerable bird species.
+    % \end{itemize}
+
+    \item \textbf{Chokhaa Store:} \hfill \textit{\href{https://chokhaa.com}{\color{blue}Preview}}
+    \newline
+    {\small \textbf{Technologies:} Shopify, Custom Theme Design, Custom Liquid Development, Razorpay Integration}
+    \begin{itemize}[leftmargin=*, noitemsep, topsep=2pt]
+        \item Developed custom Shopify storefront using Liquid and theme customization.
+        \item Integrated Razorpay payments and product customization workflows.
+        % \item Developed custom Liquid code to enhance the functionality of the Shopify platform, allowing for seamless product customization options and a smooth checkout process.
+        % \item Integrated Razorpay payment gateway to provide secure and convenient payment options for customers, ensuring a seamless and trustworthy shopping experience on the website.
+    \end{itemize}
+\end{itemize}
+
+\vspace{0pt}
+\noindent
+{\centering
+\textit{See more projects:}  
+\href{https://github.com/abhijit47?tab=repositories}{\color{blue}Github} | 
+\href{https://www.linkedin.com/in/abhijit-karmakar/details/projects/}{\color{blue}Linkedin}\par}
+
+%====================
+% EDUCATION
+%====================
+\section*{Education}
+\vspace{-10pt}
+\textbf{Bachelor of Computer Applications (BCA)} \hfill \textit{Jun 2020 – Jul 2023} \newline
+\small{Maulana Abul Kalam Azad University of Technology, West Bengal}
+\newline
+\small{CGPA: 9.05/10.0}
+
+%====================
+% CERTIFICATIONS
+%====================
+\section*{Certifications}
+\vspace{-10pt}
+\begin{itemize}[leftmargin=*, noitemsep]
+    \item \href{https://learn.mongodb.com/c/U2P6dWwiRzifJJPpkLv5vQ}{MongoDB Node.js Developer Path} \hfill \textit{Aug 2023}
+    \item \href{https://verify.letsupgrade.in/certificate/LUEPAFSJUL123557}{Postman API Fundamental Student Expert} \hfill \textit{Aug 2023}
+    \item \href{https://verify.letsupgrade.in/certificate/LUFS220162}{Fullstack Program in Web Development} \hfill \textit{Dec 2023}
+\end{itemize}
+
+\vspace{0pt}
+\noindent
+{\centering
+\textit{See more details:}  
+\href{https://www.linkedin.com/in/abhijit-karmakar/details/certifications/}
+{\color{blue}Linkedin}\par}
+
+% ====================
+% INTERESTS
+% ====================
+% \section*{Interests}
+% Exploring new technologies and frameworks, Contributing to open-source projects, Writing technical articles and tutorials, Traveling to new places and experiencing different cultures, Reading novels and literature for leisure and inspiration.
+
+% ====================
+% ACHIEVEMENTS
+% ====================
+\section*{Achievements}
+\vspace{-10pt}
+\begin{itemize}[leftmargin=*, noitemsep]
+    % \item \textbf{Postman API Fundamentals Student Expert} - Earned the Postman API Fundamentals Student Expert certification, demonstrating proficiency in API testing and development.
+    \item Delivered 40+ production client projects.
+    \item Published 2 npm packages with 600+ combined downloads.
+    % \item Built automation systems reducing manual workflow effort.
+\end{itemize}
+
+%====================
+% LANGUAGES
+%====================
+\section*{Languages}
+\vspace{-10pt}
+English (Full Professional), Hindi (Full Professional), Bengali (Native)
+
+% ====================
+% Open Source
+% ====================
+\section*{Open Source Contributions}
+\vspace{-10pt}
+\begin{itemize}[leftmargin=*, noitemsep]
+    \item \textbf{Devtools Blocker:} 
+    \newline
+    {\small \textbf{Technologies:} React.js, TypeScript, npm}
+    \begin{itemize}[leftmargin=*, noitemsep, topsep=2pt]
+        \item Published React hook package for controlling DevTools access in production environments.
+        \item Achieved 300+ downloads and actively maintained through updates and bug fixes.
+    \end{itemize}
+
+    % {\small \textbf{Technologies:} Next.js, TypeScript, Node.js, PostgreSQL, Redis, StreamIO, Novu}
+    % \begin{itemize}[leftmargin=*, noitemsep, topsep=2pt]
+    %     \item Developed real-time property matching system.
+    %     \item Developed real-time property matching system.
+    %     \item Developed real-time property matching system.
+    %     \item Developed real-time property matching system.
+    % \end{itemize}
+    \item \textbf{Rainbow color Generator:}
+    \newline
+    {\small \textbf{Technologies:} Typescript, npm}
+    \begin{itemize}[leftmargin=*, noitemsep, topsep=2pt]
+    \item Published npm package for generating random rainbow hex colors.
+    \item Achieved 300+ downloads and maintained through community-driven improvements.
+    \end{itemize}
+\end{itemize}
+
+%====================
+% Signature
+%====================
+\vfill % Dynamically pushes everything below this line to the absolute bottom of the page
+
+% \noindent
+% \begin{flushright}
+% \begin{minipage}{2.5in} % Constrains the signature block width
+%     \centering
+%     Abhijit Karmakar \\[6pt] % Extra space for physical/digital signature
+%     \rule{2.5in}{0.4pt} \\ [4pt]    % Creates a clean horizontal signature line
+%     \textbf{Date: \today} \hfill \tiny{Digital Signature} % Date on the right, with a note about digital signature
+% \end{minipage}
+% \end{flushright}
+
+% \vspace{10pt} % Small gap between signature and disclosure
+% \noindent
+% {\scriptsize \color{black!60} \noindent
+% \textit{\textbf{Privacy Notice:} The information provided in this curriculum vitae is shared strictly for employment consideration and professional evaluation purposes. Unauthorized distribution, commercial profiling, or third-party marketing use is not permitted.}}
+
+
+\end{document}
