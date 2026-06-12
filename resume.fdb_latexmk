@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1781275547.30019 "d:/my-resume/resume.tex" "resume.pdf" "resume" 1781275548.22729 0
+["pdflatex"] 1781276765.57383 "d:/my-resume/resume.tex" "resume.pdf" "resume" 1781276766.51674 0
   "C:/Users/Abhijit/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1781188393 867612 3523b9a4af5f9adf2e3848be1e79dc77 ""
   "C:/Users/Abhijit/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1781159799 13368068 3975b4c8a5df78aef8e452afca4f9701 ""
   "C:/Users/Abhijit/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lato/a_cl4kdn.enc" 1561405511 2908 33404fff2a7b8e169974e96af0be5333 ""
@@ -79,10 +79,10 @@
   "C:/Users/Abhijit/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/Abhijit/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1729265222 55384 b454dec21c2d9f45ec0b793f0995b992 ""
   "C:/Users/Abhijit/AppData/Local/Programs/MiKTeX/tex/latex/xkeyval/xkeyval.sty" 1656236919 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
-  "d:/my-resume/resume.tex" 1781199533 18226 2d4ced4ec617cbc9862b0171cba8a52b ""
-  "resume.aux" 1781275548 162 87159b23cce7c2b923b11c85495bbd6d "pdflatex"
-  "resume.out" 1781275547 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "resume.tex" 1781199533 18226 2d4ced4ec617cbc9862b0171cba8a52b ""
+  "d:/my-resume/resume.tex" 1781276764 18424 dc279d222d74c90db2c95dd77cfdd3ad ""
+  "resume.aux" 1781276766 162 87159b23cce7c2b923b11c85495bbd6d "pdflatex"
+  "resume.out" 1781276766 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "resume.tex" 1781276764 18424 dc279d222d74c90db2c95dd77cfdd3ad ""
   (generated)
   "resume.aux"
   "resume.log"
